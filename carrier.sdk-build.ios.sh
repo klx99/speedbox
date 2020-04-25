@@ -23,9 +23,10 @@ ARCH_LIST=(iphoneos iphonesimulator)
 SDK_LIST=(iPhoneOS iPhoneSimulator)
 for idx in "${!ARCH_LIST[@]}"; do
     build_dir="$PROJECT_DIR/build/iOS";
-    install_dir="$build_dir/${ARCH_LIST[$idx]}/output";
+    build_arch_dir="$build_dir/${ARCH_LIST[$idx]}";
+    install_dir="$build_arch_dir/output";
     dest_dir="$build_dir/dest";
-    mkdir -p "$build_dir" && cd "$build_dir";
+    mkdir -p "$build_arch_dir" && cd "$build_arch_dir";
 
     cmake \
         -DIOS_PLATFORM=${ARCH_LIST[$idx]} \
