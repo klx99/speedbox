@@ -4,7 +4,7 @@ set -o nounset
 set -o errexit
 
 SCRIIPTS_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd);
-PROJECT_DIR=$(dirname "$SCRIIPTS_DIR");
+PROJECT_DIR=$(dirname $(dirname "$SCRIIPTS_DIR"));
 MAX_JOBS=2
 if [ -f /proc/cpuinfo ]; then
 	MAX_JOBS=$(grep flags /proc/cpuinfo |wc -l)
