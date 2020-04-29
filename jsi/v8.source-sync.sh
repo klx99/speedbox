@@ -25,15 +25,31 @@ if [[ "$GCLIENT_PATH" == "" ]]; then
     git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git;
 fi
 
+V8_REPO="https://github.com/m15998568620/v8.git";
+V8_VERSION="8.1.307.30";
+
 echo "generating .gclient";
 echo 'solutions = [ {'                                    >  .gclient;
 echo '  "name": "v8",'                                    >> .gclient;
-echo '  "url": "https://github.com/m15998568620/v8.git",' >> .gclient;
+echo '  "url": "'$V8_REPO'",'                             >> .gclient;
 echo '  "deps_file": "DEPS",'                             >> .gclient;
 echo '  "managed": False,'                                >> .gclient;
 echo '  "custom_deps": {},'                               >> .gclient;
 echo '}, ]'                                               >> .gclient;
 echo 'target_os = ["android"]'                            >> .gclient;
 
+echo "updating depot tools";
+update_depot_tools;
+
+echo "fetching v8";
+if [[ ! -d "v8/.git" ]]; then
+    git clone "$V8_REPO";
+fi
+echo "reseting v8 to $V8_VERSION";
+pushd v8;
+git reset --hard $V8_VERSION;
+popd;
+
 echo "syncing";
-gclient sync;
+gclient sync -D; # -D auto remove unused packages.
+
