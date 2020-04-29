@@ -3,6 +3,8 @@
 set -o nounset                              # Treat unset variables as an error
 
 CURRENT_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd);
+DOCKER_DIR=$(dirname "$CURRENT_DIR");
+
 source "$CURRENT_DIR/docker-env.sh";
 
 function DockerRun() {
@@ -16,12 +18,11 @@ function DockerRun() {
 
     local cmdline="docker run";
     cmdline+=" $args";
-    cmdline+=" -v $HOME/workspace/docker/home:$homedir";
+    cmdline+=" -v $DOCKER_DIR/home:$homedir";
     cmdline+=" -v $HOME/workspace:$homedir/workspace";
-    cmdline+=" -v $HOME/workspace/git/jsi/v8:/opt/v8";
-    cmdline+=" -w $homedir/workspace";
+    cmdline+=" -w $homedir";
     cmdline+=" -P";
-    cmdline+=" -e TZ=Asia/Shanghai";
+    #cmdline+=" -e TZ=Asia/Shanghai";
     #cmdline+=" -p 1081:1081";
     cmdline+=" --rm -it $img";
 
