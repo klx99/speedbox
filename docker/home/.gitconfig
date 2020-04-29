@@ -1,0 +1,11 @@
+
+[alias] tree = log --graph --decorate --pretty=oneline --abbrev-commit --color --all
+[alias] btree = log --graph --decorate --pretty=oneline --abbrev-commit --color
+[alias] subcmd = "!f() { pdir=$1;shift;cd $pdir && git $@; }; f"
+
+[user]
+	name = mengxk
+	email = xiaokun.meng@qcast.cn
+
+[core]
+	editor = vim
