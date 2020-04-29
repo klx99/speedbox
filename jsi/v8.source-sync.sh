@@ -40,6 +40,10 @@ echo 'target_os = ["android"]'                            >> .gclient;
 
 echo "updating depot tools";
 update_depot_tools;
+if [[ ! -f "depot_tools/.cipd_bin/vpython" ]]; then
+    echo "Failed to update depot tools!";
+    exit 1;
+fi
 
 echo "fetching v8";
 if [[ ! -d "v8/.git" ]]; then
