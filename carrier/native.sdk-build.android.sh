@@ -27,7 +27,7 @@ ANDROID_NDK_HOME=$(eval cd "$ANDROID_NDK_HOME" && pwd);
 ARCH_LIST=(armeabi-v7a arm64-v8a x86 x86_64)
 HOST_LIST=(arm-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android)
 for idx in "${!ARCH_LIST[@]}"; do
-    build_dir="$PROJECT_DIR/build/Android";
+    build_dir="$PROJECT_DIR/build/android";
     build_arch_dir="$build_dir/${ARCH_LIST[$idx]}";
     install_dir="$build_arch_dir/output";
     dest_dir="$build_dir/dest";

@@ -11,6 +11,8 @@ if [[ "$(uname -s)" != "Linux" ]]; then
     exit 1;
 fi
 
+source "$SCRIIPTS_DIR/v8.source-version.sh";
+
 export PATH+=":$PROJECT_DIR/depot_tools";
 
 echo "change dir to $PROJECT_DIR";
@@ -26,7 +28,6 @@ if [[ "$GCLIENT_PATH" == "" ]]; then
 fi
 
 V8_REPO="https://github.com/m15998568620/v8.git";
-V8_VERSION="8.1.307.30";
 
 echo "generating .gclient";
 echo 'solutions = [ {'                                    >  .gclient;

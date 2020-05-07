@@ -27,11 +27,24 @@ cmake \
 #make -j$MAX_JOBS VERBOSE=1 && make install;
 make -j$MAX_JOBS && make install;
 
+LIB_SUFFIX=;
+case ${LOCAL_SYSTEM} in
+    "Linux")
+        LIB_SUFFIX="so";
+        ;;
+    "Darwin")
+        LIB_SUFFIX="dylib";
+        ;;
+    "Windows")
+        LIB_SUFFIX="dll";
+        ;;
+esac
+
 mkdir -p "$dest_dir/include" "$dest_dir/lib";
 echo "copy $install_dir/include/*";
 echo " ==> $dest_dir/include";
 cp -r $install_dir/include/* "$dest_dir/include";
-echo "copy $install_dir/lib/*.{so,dylib,dll}";
+echo "copy $install_dir/lib/*.$LIB_SUFFIX";
 echo " ==> $dest_dir/lib/";
-cp $install_dir/lib/*.{so,dylib,dll} "$dest_dir/lib";
+cp $install_dir/lib/*.$LIB_SUFFIX "$dest_dir/lib";
 
