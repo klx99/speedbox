@@ -19,11 +19,11 @@ echo "change dir to $PROJECT_DIR";
 cd $PROJECT_DIR;
 cd v8;
 
-echo "patching";
+PATCHED_FILE="build/toolchain/toolchain.gni";
+echo "patching $PATCHED_FILE";
+PATCHED_CONTENT="$(cat $PATCHED_FILE)";
 V8_VER_ARRAY=(${V8_VERSION//\./ });
 V8_MAINVER="${V8_VER_ARRAY[0]}${V8_VER_ARRAY[1]}";
-PATCHED_FILE="build/toolchain/toolchain.gni";
-PATCHED_CONTENT="$(cat $PATCHED_FILE)";
 PATCHED_CONTENT=${PATCHED_CONTENT/cr.so/${V8_MAINVER}.so};
 echo "$PATCHED_CONTENT" > $PATCHED_FILE;
 
