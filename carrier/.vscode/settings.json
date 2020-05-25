@@ -55,6 +55,15 @@
         "list": "cpp",
         "map": "cpp",
         "memory_resource": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "future": "cpp",
+        "__threading_support": "cpp",
+        "__hash_table": "c",
+        "__split_buffer": "c",
+        "__tree": "c",
+        "bitset": "c",
+        "queue": "c",
+        "stack": "c",
+        "unordered_set": "c"
     }
 }

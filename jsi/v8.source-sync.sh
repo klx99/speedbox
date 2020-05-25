@@ -27,7 +27,7 @@ if [[ "$GCLIENT_PATH" == "" ]]; then
     git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git;
 fi
 
-V8_REPO="https://github.com/m15998568620/v8.git";
+V8_REPO="https://github.com/klx99/v8.git";
 
 echo "generating .gclient";
 echo 'solutions = [ {'                                    >  .gclient;

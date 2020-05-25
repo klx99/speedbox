@@ -19,6 +19,9 @@ echo "change dir to $PROJECT_DIR";
 cd $PROJECT_DIR;
 cd v8;
 
+echo "installing build-deps-android";
+./build/install-build-deps-android.sh;
+
 PATCHED_FILE="build/toolchain/toolchain.gni";
 echo "patching $PATCHED_FILE";
 PATCHED_CONTENT="$(cat $PATCHED_FILE)";
@@ -32,9 +35,11 @@ echo "configing";
 ./tools/dev/v8gen.py android.arm.release;
 
 GN_FILE="out.gn/android.arm.release/args.gn";
-echo ""                               >> $GN_FILE;
-echo "is_component_build = true"      >> $GN_FILE;
-echo "use_custom_libcxx = false"      >> $GN_FILE;
-echo "v8_enable_i18n_support = false" >> $GN_FILE;
+echo ''                                 >> $GN_FILE;
+echo 'is_component_build = true'        >> $GN_FILE;
+echo 'use_custom_libcxx = false'        >> $GN_FILE;
+echo 'v8_enable_i18n_support = false'   >> $GN_FILE;
+echo 'v8_target_cpu = "arm"'            >> $GN_FILE;
+
 cat $GN_FILE;
 

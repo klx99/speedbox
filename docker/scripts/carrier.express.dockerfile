@@ -6,3 +6,5 @@ RUN apt install -y git vim ctags indent
 RUN apt install -y wget iputils-ping net-tools
 
 RUN apt install -y python3 python3-venv sqlite3
+RUN apt update && apt install -y build-essential python-dev
+

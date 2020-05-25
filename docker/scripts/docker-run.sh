@@ -21,7 +21,6 @@ function DockerRun() {
     cmdline+=" -v $DOCKER_DIR/home:$homedir";
     cmdline+=" -v $HOME/workspace:/opt/workspace";
     cmdline+=" -w /opt/workspace";
-    #cmdline+=" -p 5000:5000";
     cmdline+=" -P";
     #cmdline+=" -e TZ=Asia/Shanghai";
     #cmdline+=" -p 1081:1081";
