@@ -32,14 +32,16 @@ echo "$PATCHED_CONTENT" > $PATCHED_FILE;
 
 
 echo "configing";
-./tools/dev/v8gen.py android.arm.release;
+./tools/dev/v8gen.py android.arm.release -- \
+    is_component_build=true \
+    use_custom_libcxx=false \
+    v8_enable_i18n_support=false \
+    v8_target_cpu="arm";
 
-GN_FILE="out.gn/android.arm.release/args.gn";
-echo ''                                 >> $GN_FILE;
-echo 'is_component_build = true'        >> $GN_FILE;
-echo 'use_custom_libcxx = false'        >> $GN_FILE;
-echo 'v8_enable_i18n_support = false'   >> $GN_FILE;
-echo 'v8_target_cpu = "arm"'            >> $GN_FILE;
-
-cat $GN_FILE;
+#GN_FILE="out.gn/android.arm.release/args.gn";
+#echo 'is_component_build = true'        >> $GN_FILE;
+#echo 'use_custom_libcxx = false'        >> $GN_FILE;
+#echo 'v8_enable_i18n_support = false'   >> $GN_FILE;
+#echo 'v8_target_cpu = "arm"'            >> $GN_FILE;
+#cat $GN_FILE;
 

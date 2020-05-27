@@ -19,6 +19,8 @@ echo "change dir to $PROJECT_DIR";
 cd $PROJECT_DIR;
 
 echo "building";
-ninja -C v8/out.gn/android.arm.release d8;
+V8_VER_ARRAY=(${V8_VERSION//\./ });
+V8_MAINVER="${V8_VER_ARRAY[0]}${V8_VER_ARRAY[1]}";
+ninja -C v8/out.gn/android.arm.release v8;
 
 
