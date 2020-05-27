@@ -25,4 +25,4 @@ echo "change dir to $PROJECT_DIR";
 cd $PROJECT_DIR;
 
 echo "building";
-make -C node/out -j $MAX_JOBS #V=1;
+make -C node/out -j $MAX_JOBS libnode #V=1;
