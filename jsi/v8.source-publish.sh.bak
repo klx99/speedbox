@@ -1,0 +1,87 @@
+#!/bin/bash
+
+set -o nounset
+set -o errexit
+
+SCRIIPTS_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd);
+PROJECT_DIR=$(dirname $(dirname "$SCRIIPTS_DIR"));
+
+source "$SCRIIPTS_DIR/v8.source-version.sh";
+
+if [[ -z $(which gradle) ]]; then
+    sudo apt install -y gradle;
+fi
+ANDROID_SDK_HOME="$PROJECT_DIR/v8/third_party/android_sdk/public/";
+ANDROID_SDK_VERSION=$(ls $ANDROID_SDK_HOME/platforms)
+ANDROID_SDK_VERSION=${ANDROID_SDK_VERSION##*-};
+
+OUTPUT_DIR="$PROJECT_DIR/v8/out.gn";
+V8_NATIVE_DIR="$OUTPUT_DIR/v8-native";
+echo "change dir to $V8_NATIVE_DIR";
+mkdir -p "$V8_NATIVE_DIR" && cd "$V8_NATIVE_DIR";
+
+#echo "initializing android project";
+#gradle init;
+
+PATCHED_FILE="sdk/jni";
+echo "generating $PATCHED_FILE";
+rm -rf "$PATCHED_FILE/include" && mkdir -p "$PATCHED_FILE/"{armeabi-v7a,include/libplatform};
+cp -r "$OUTPUT_DIR/android.arm.release/libv8.$V8_MAINVER.so"    "$PATCHED_FILE/armeabi-v7a/libv8.$V8_MAINVER.so";
+cp -r "$OUTPUT_DIR/android.arm.release/snapshot_blob.bin"       "$PATCHED_FILE/armeabi-v7a/libv8.snapshot.$V8_MAINVER.so";
+cp -r "$PROJECT_DIR/v8/include/"*.h                             "$PATCHED_FILE/include/";
+cp -r "$PROJECT_DIR/v8/include/libplatform/"*.h                 "$PATCHED_FILE/include/libplatform/";
+
+PATCHED_FILE="sdk/AndroidManifest.xml";
+echo "generating $PATCHED_FILE";
+mkdir -p "sdk";
+echo '<manifest xmlns:android="http://schemas.android.com/apk/res/android"'  > "$PATCHED_FILE";
+echo '    package="com.qcode.v8native">'                                    >> "$PATCHED_FILE";
+echo '    <uses-sdk'                                                        >> "$PATCHED_FILE";
+echo '          android:minSdkVersion="16"'                                 >> "$PATCHED_FILE";
+echo '          android:targetSdkVersion="'$ANDROID_SDK_VERSION'" />'       >> "$PATCHED_FILE";
+echo '    <application>'                                                    >> "$PATCHED_FILE";
+echo '        <meta-data '                                                  >> "$PATCHED_FILE";
+echo '            android:name="V8MainVersion" '                            >> "$PATCHED_FILE";
+echo '            android:value="'$V8_MAINVER'"/>'                          >> "$PATCHED_FILE";
+echo '    </application>'                                                   >> "$PATCHED_FILE";
+echo '</manifest>'                                                          >> "$PATCHED_FILE";
+
+#PATCHED_FILE="sdk/build.gradle";
+#echo "generating $PATCHED_FILE";
+#echo 'apply plugin: "com.android.library"'                                            > "$PATCHED_FILE";
+#echo 'android {'                                                                     >> "$PATCHED_FILE";
+#echo '    compileSdkVersion '$ANDROID_SDK_VERSION                                    >> "$PATCHED_FILE";
+#echo '    defaultConfig {'                                                           >> "$PATCHED_FILE";
+#echo '        minSdkVersion 19'                                                      >> "$PATCHED_FILE";
+#echo '        targetSdkVersion '$ANDROID_SDK_VERSION                                 >> "$PATCHED_FILE";
+#echo '    }'                                                                         >> "$PATCHED_FILE";
+#echo '}'                                                                             >> "$PATCHED_FILE";
+
+zip v8-native.aar sdk/*;
+
+
+exit
+
+PATCHED_FILE="publish.gradle";
+echo "generating $PATCHED_FILE";
+echo 'apply plugin: "maven-publish"'                                         > "$PATCHED_FILE";
+echo 'publishing {'                                                         >> "$PATCHED_FILE";
+echo '  publications {'                                                     >> "$PATCHED_FILE";
+echo '    maven(MavenPublication) {'                                        >> "$PATCHED_FILE";
+echo '      groupId com.qcode'                                              >> "$PATCHED_FILE";
+echo '      artifactId "${project.name}"'                                   >> "$PATCHED_FILE";
+echo '      version rootProject.ext.crwvVerName'                            >> "$PATCHED_FILE";
+echo '      artifact "${buildDir}/outputs/aar/${project.name}-release.aar"' >> "$PATCHED_FILE";
+echo '    }'                                                                >> "$PATCHED_FILE";
+echo '  }'                                                                  >> "$PATCHED_FILE";
+echo '  repositories {'                                                     >> "$PATCHED_FILE";
+echo '    maven {'                                                          >> "$PATCHED_FILE";
+echo '      url "$rootProject.buildDir/repo"'                               >> "$PATCHED_FILE";
+echo '    }'                                                                >> "$PATCHED_FILE";
+echo '  }'                                                                  >> "$PATCHED_FILE";
+echo '}'                                                                    >> "$PATCHED_FILE";
+echo 'tasks.withType(PublishToMavenRepository) {'                           >> "$PATCHED_FILE";
+echo '  it.dependsOn assembleRelease'                                       >> "$PATCHED_FILE";
+echo '}'                                                                    >> "$PATCHED_FILE";
+
+echo "packaging";

@@ -36,7 +36,7 @@ ANDROID_OPTS+=" --without-npm";
 ANDROID_OPTS+=" --without-intl";
 ANDROID_OPTS+=" --fully-static";
 ANDROID_OPTS+=" --without-bundled-v8";
-ANDROID_OPTS+=" --without-v8-platform";
+#ANDROID_OPTS+=" --without-v8-platform";
 
 ANDROID_LIBLOG="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/$ANDROID_API/liblog.so";
 
@@ -49,7 +49,7 @@ cd $PROJECT_DIR;
 cd node;
 
 echo "installing deps";
-apt install python3-distutils
+apt install -y python3-distutils
 
 
 PATCHED_FILE="android-configure";
