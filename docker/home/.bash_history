@@ -737,3 +737,898 @@ ls
 ./android-configure 
 rm -rf /Users/mengxk//workspace/elastos/projects/ioex/ioeX.BravoMesh.CarrierModule/build
 exit
+cd git/jsi/node/node/
+ls ~
+ls /root/
+cd 
+ls
+pwd
+ls
+cd -
+./android-configure $HOME/android/android-ndk-r21b 
+./android-configure $HOME/android/android-ndk-r21b arm 19
+./android-configure $HOME/android/android-ndk-r21b arm 23
+vim configure
+ls
+ls tools/
+./tools/make-v8.sh 
+ls
+ls tools/
+./tools/check-imports.py 
+./android-configure $HOME/android/android-ndk-r21b arm 23
+vim android-configure 
+cat android-configure 
+find ~/android/android-ndk-r21b/ -name arm*linux-androideabi
+find ~/android/android-ndk-r21b/ -name arm*linux-androideabi*
+./android-configure $HOME/android/android-ndk-r21b arm 23
+./android-configure $HOME/android/android-ndk-r21b arm 19
+exit
+ls
+cd git/jsi/node/
+ls
+./speedbox/jsi/node.source-config.sh 
+apt install python3-distutils
+./speedbox/jsi/node.source-config.sh 
+apt install sudo
+sudo apt install 
+./speedbox/jsi/node.source-config.sh 
+ls
+diff -u android-configure node/android-configure 
+./speedbox/jsi/node.source-config.sh 
+vim node/android-configure 
+cd node/
+git checkout android-configure 
+cd -
+./speedbox/jsi/node.source-config.sh 
+vim node/android-configure 
+./speedbox/jsi/node.source-config.sh 
+ls
+cd node/out/
+ls
+make
+ls
+cd ../
+ls
+make -c out -j 4
+make -C out -j 4
+make -C out -j 4 -v
+make -C out -j 4 -V
+make -C out -j 4
+cd ..
+./speedbox/jsi/node.source-build.sh 
+ls
+vim node/config.gypi 
+vim node/configure
+vim node/configure.py
+./node/configure -h
+vim android-configure 
+./speedbox/jsi/node.source-build.sh 
+cd ../v8/v8/
+ls
+ls buildtools/
+ls buildtools/android/
+ls third_party/
+ls third_party/android_ndk/
+cd -
+pwd
+ls
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+exit
+cd git/jsi/node/
+ls
+./speedbox/jsi/node.source-build.sh 
+ls /opt/workspace/git/jsi/v8/v8/third_party/android_ndk//toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld
+find /opt/workspace/git/jsi/v8/v8/third_party/android_ndk//toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/ -name liblog.so
+find /opt/workspace/git/jsi/v8/v8/third_party/android_ndk//toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/ -name liblog*
+find /opt/workspace/git/jsi/v8/v8/third_party/android_ndk//toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../ -name liblog*
+cd node/
+ls
+cd ../
+./speedbox/jsi/node.source-config.sh 
+ls
+cd node/
+ls
+./android-configure 
+cd ../
+ls
+./speedbox/jsi/node.source-config.sh 
+find /opt/workspace/git/jsi/v8/v8/third_party/android_ndk//toolchains/llvm/prebuilt/linux-x86_64/ -name liblog.so
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+cd node/out/
+make V=1
+cd ../
+rm -r out/
+cd ../
+ls
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+cd node/out/
+make V=1
+./speedbox/jsi/node.source-build.sh 
+cd -
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+export ANDROID_NDK_HOME=/root/android/android-ndk-r21b/
+./speedbox/jsi/node.source-config.sh 
+rm -r node/out/
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+cd node/out/
+make -v
+make V=1
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/
+find /root/android/android-ndk-r21b/ -name sysroot
+ls /root/android/android-ndk-r21b/sysroot/
+ls /root/android/android-ndk-r21b/sysroot/usr/
+ll /root/android/android-ndk-r21b/
+ll /root/android/android-ndk-r21b/sysroot/
+ll /root/android/android-ndk-r21b/sysroot/usr/lib/arm-linux-androideabi/
+find /root/android/android-ndk-r21b/ -name sysroot
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/l
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/
+rm -r node/out/
+cd -
+rm -r node/out/
+./speedbox/jsi/node.source-config.sh 
+ls
+ls node/out/
+cd node/out/
+ls
+grep openssl-cli * -r
+vim Makefile 
+cd ../
+./configure --help
+ls
+rm -r out/
+cd ../
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+vim node/out/Makefile 
+./speedbox/jsi/node.source-build.sh 
+vim node/out/Makefile 
+find /root/android/android-ndk-r21b/ -name sysroot
+cp /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot
+cp /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/16/liblog.so node/out/
+./speedbox/jsi/node.source-build.sh 
+cd node/out/
+make V=1
+ls
+cd ..
+ls
+rm -r out/
+vim Makefile 
+grep LDFLAGS * -r
+vim common.gypi 
+./speedbox/jsi/node.source-config.sh 
+ls
+./android-configure 
+cd ../
+./speedbox/jsi/node.source-config.sh 
+vim node/config.
+vim node/config.mk 
+vim android-configure 
+cat android-configure 
+rm -r node/out/
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+rm -r node/out/
+./speedbox/jsi/node.source-config.sh 
+grep "sysroot/arm-linux-androideabi" node/out/* -r
+grep " -L" node/out/* -r
+./speedbox/jsi/node.source-config.sh 
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/arm-linux-androideabi/23
+./speedbox/jsi/node.source-config.sh 
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/bin/
+rm -r node/out/
+./speedbox/jsi/node.source-config.sh 
+grep " -L" node/out/* -r
+grep " \-L" node/out/* -r
+grep "sysroot" node/out/* -r
+grep "CXX" node/out/* -r
+grep "LD" node/out/* -r
+vim node/out/deps/openssl/openssl-cli.target.mk
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+cd git/jsi/node/
+ls
+cd node/out/
+make
+make V=1
+ls
+cd ../
+ls
+mv node/common.gypi ./
+./speedbox/jsi/node.source-config.sh 
+export ANDROID_NDK_HOME=/root/android/android-ndk-r21b/
+./speedbox/jsi/node.source-config.sh 
+mv common.gypi node/
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+rm -r node/out/
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+rm -r node/out/
+./speedbox/jsi/node.source-config.sh 
+ls /root/android/android-ndk-r21b/sysroot/usr/lib/arm-linux-androideabi/19
+ls /root/android/android-ndk-r21b/prebuilt/android-arm
+ls /root/android/android-ndk-r21b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/
+find /root/android/android-ndk-r21b/ -name liblog.so
+rm -r node/out/
+./speedbox/jsi/node.source-config.sh 
+grep "plat" node/out/* -r
+grep "android-19" node/out/* -r
+ls /root/android/android-ndk-r21b/platforms/android-19/arch-arm/usr/lib
+file /root/android/android-ndk-r21b/platforms/android-19/arch-arm/usr/lib/liblog.so 
+./speedbox/jsi/node.source-build.sh 
+cd node/out/
+make V=1
+ls /root/android/android-ndk-r21b/platforms/android-19/arch-arm/usr/lib
+vim deps/openssl/openssl-cli.target.mk
+make V=1
+vim deps/openssl/openssl-cli.target.mk
+ll /root/android/android-ndk-r21b/platforms/android-19/arch-arm/usr/lib 
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/
+ll /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/bin/
+ls /root/android/android-ndk-r21b/platforms/android-19/
+ls /root/android/android-ndk-r21b/platforms/android-19/arch-arm/
+vim deps/openssl/openssl-cli.target.mk
+make V=1
+vim deps/openssl/openssl-cli.target.mk
+make V=1
+/root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/
+vim deps/openssl/openssl-cli.target.mk
+make V=1
+vim deps/openssl/openssl-cli.target.mk
+make V=1
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/
+vim deps/openssl/openssl-cli.target.mk
+make V=1
+cd ../
+rm -r out/
+./speedbox/jsi/node.source-config.sh 
+cd ../
+./speedbox/jsi/node.source-config.sh 
+vim deps/openssl/openssl-cli.target.mk
+vim node/out/deps/openssl/openssl-cli.target.mk
+cat node/out/deps/openssl/openssl-cli.target.mk
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/liblog.so 
+./speedbox/jsi/node.source-config.sh 
+ls /root/android/android-ndk-r21b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/19/liblog.so 
+rm -r out/
+jls
+rm -r node/out/
+./speedbox/jsi/node.source-conf
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+grep _FILE_OFFSET_BITS node/out/* -r
+rm -r node/out/
+grep _FILE_OFFSET_BITS * -r
+grep _FILE_OFFSET_BITS node/* -r
+cd ../v8/
+ls
+cd v8/
+git status
+ls
+exit
+ls
+cd git/jsi/node/
+ls
+vim speedbox/jsi/node.source-config.sh 
+vim node/common.gypi 
+vim speedbox/jsi/node.source-config.sh 
+vim node/android-configure 
+rm -rf node/out/
+rm -rvf node/out/
+./speedbox/jsi/node.source-config.sh 
+export ANDROID_NDK_HOME=/root/android/android-ndk-r21b/
+./speedbox/jsi/node.source-config.sh 
+cd node/
+git diff
+./speedbox/jsi/node.source-config.sh 
+cd ../
+./speedbox/jsi/node.source-config.sh 
+vim ./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-config.sh 
+cd node/ 
+git diff
+ls
+grep aaaaaa out/* -r
+./speedbox/jsi/node.source-config.sh 
+cd ../
+./speedbox/jsi/node.source-config.sh 
+grep aaaaaa node/out/* -r
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/
+grep v8 node/out/* -r
+./speedbox/jsi/node.source-build.sh 
+vim vim /opt/workspace/git/jsi/v8/v8/include/libplatform/v8-tracing.h
+vim /opt/workspace/git/jsi/v8/v8/include/libplatform/v8-tracing.h
+grep _LIBCPP_HAS_NO_OFF_T_FUNCTIONS * -r
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/
+grep _LIBCPP_HAS_NO_OFF_T_FUNCTIONS node/out/* -r
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/ ../v8/v8/out.gn/android.arm.release/libv8.81.so
+realpath ../v8/v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/ ../v8/v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/ ../v8/v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/node.source-build.sh 
+cd node/out/
+ls
+make 
+vim Makefile 
+make libnode.a
+cd -
+./speedbox/jsi/node.source-build.sh 
+ls
+ls node/
+ls node/out/
+ls node/out/Release/
+ls node/out/Release/obj.target/
+ls node/out/Release/obj.target/libnode
+ls node/out/Release/obj.target/libnode.a 
+ll node/out/Release/obj.target/libnode.a 
+ll -h node/out/Release/obj.target/libnode.a 
+cd ../
+ls
+cd node/
+./speedbox/jsi/node.source-build.sh 
+exit
+cd git/jsi/v8
+./speedbox/jsi/v8.source-build.sh 
+cd ../
+ls
+cd node/
+./speedbox/jsi/node.source-build.sh 
+vim ./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+export ANDROID_NDK_HOME=/root/android/android-ndk-r21b/
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/ ../v8/v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/ ../v8/v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/node.source-build.sh 
+nm ../v8/v8/out.gn/android.arm.release/lib.unstripped/libv8.81.so 
+nm ../v8/v8/out.gn/android.arm.release/lib.unstripped/libv8.81.so  |grep TracingController
+./speedbox/jsi/node.source-build.sh 
+ls
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/ ../v8/v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/node.source-build.sh 
+ls
+rm -r node/out/
+./speedbox/jsi/node.source-build.sh 
+./speedbox/jsi/node.source-config.sh ../v8/v8/include/ ../v8/v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/node.source-build.sh 
+ls node/out/
+ls node/out/deps/
+ls
+cd node/
+ls
+vim configure
+vim common.gypi 
+cd ../../v8/
+ls
+./speedbox/jsi/v8.source-build.sh 
+ls v8/out.gn/android.arm.release/
+ls v8/out.gn/android.arm.release/lib.unstripped/
+ls v8/out.gn/android.arm.release/clang_x86_v8_arm/
+ls v8/out.gn/android.arm.release/clang_x86_v8_arm/o
+find v8/out.gn/android.arm.release/ -name *.a
+ll v8/out.gn/android.arm.release/
+ll -h v8/out.gn/android.arm.release/
+./speedbox/jsi/v8.source-build.sh 
+ls
+./speedbox/jsi/node.source-config.sh 
+./speedbox/jsi/v8.source-config.sh 
+apt install libpci3:i386 libx11-xcb1:i386 linux-libc-dev:i386 apache2-bin binutils binutils-aarch64-linux-gnu binutils-arm-linux-gnueabihf binutils-mips64el-linux-gnuabi64 binutils-mipsel-linux-gnu bison bzip2 cdbs curl dbus-x11 devscripts dpkg-dev elfutils fakeroot flex git-core gperf libapache2-mod-php7.2 libappindicator3-1 libappindicator3-dev libasound2 libasound2-dev libatk1.0-0 libatspi2.0-0 libatspi2.0-dev libbluetooth-dev libbrlapi-dev libbrlapi0.6 libbz2-1.0 libbz2-dev libc6 libc6-dev libcairo2 libcairo2-dev libcap-dev libcap2 libcups2 libcups2-dev libcurl4-gnutls-dev libdrm-dev libdrm2 libelf-dev libevdev-dev libevdev2 libexpat1 libffi-dev libffi6 libfontconfig1 libfreetype6 libgbm-dev libgbm1 libglib2.0-0 libglib2.0-dev libglu1-mesa-dev libgnome-keyring-dev 
+./speedbox/jsi/v8.source-config.sh 
+./speedbox/jsi/v8.source-build.sh 
+./speedbox/jsi/v8.source-config.sh 
+./speedbox/jsi/v8.source-build.sh 
+exit
+cd git/jsi/v8
+./speedbox/jsi/v8.source-build.sh 
+free
+./speedbox/jsi/v8.source-build.sh 
+cd git/jsi/v8
+./speedbox/jsi/v8.source-build.sh 
+ls
+cd git/jsi/v8
+ls
+./speedbox/jsi/v8.source-build.sh 
+ls
+./speedbox/jsi/v8.source-config.sh 
+apt install libpci3:i386 libx11-xcb1:i386 linux-libc-dev:i386 apache2-bin binutils binutils-aarch64-linux-gnu binutils-arm-linux-gnueabihf binutils-mips64el-linux-gnuabi64 binutils-mipsel-linux-gnu bison bzip2 cdbs curl dbus-x11 devscripts dpkg-dev elfutils fakeroot flex git-core gperf libapache2-mod-php7.2 libappindicator3-1 libappindicator3-dev libasound2 libasound2-dev libatk1.0-0 libatspi2.0-0 libatspi2.0-dev libbluetooth-dev libbrlapi-dev libbrlapi0.6 libbz2-1.0 libbz2-dev libc6 libc6-dev libcairo2 libcairo2-dev libcap-dev libcap2 libcups2 libcups2-dev libcurl4-gnutls-dev libdrm-dev libdrm2 libelf-dev libevdev-dev libevdev2 libexpat1 libffi-dev libffi6 libfontconfig1 libfreetype6 libgbm-dev libgbm1 libglib2.0-0 libglib2.0-dev libglu1-mesa-dev libgnome-keyring-dev libgnome-keyring0 libgtk-3-0 libgtk-3-dev libinput-dev libinput10 libjpeg-dev libkrb5-dev libnspr4 libnspr4-dev libnss3 libnss3-dev libpam0g libpam0g-dev libpango1.0-0 libpci-dev libpci3 libpcre3 libpixman-1-0 libpng16-16 libpulse-dev libpulse0 libsctp-dev libspeechd-dev libspeechd2 libsqlite3-0 libsqlite3-dev libssl-dev libstdc++6 libudev-dev libudev1 libuuid1 libvulkan-dev libvulkan1 libwayland-egl1-mesa libwww-perl libx11-6 libx11-xcb1 libxau6 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxdmcp6 libxext6 libxfixes3 libxi6 libxinerama1 libxkbcommon-dev libxrandr2 libxrender1 libxslt1-dev libxss-dev libxt-dev libxtst-dev libxtst6 locales openbox p7zip patch perl php7.2-cgi pkg-config python python-cherrypy3 python-crypto python-dev python-numpy python-opencv python-openssl python-psutil python-yaml rpm ruby subversion uuid-dev wdiff x11-utils xcompmgr xz-utils zip zlib1g
+./speedbox/jsi/v8.source-config.sh 
+./speedbox/jsi/v8.source-build.sh 
+vim v8/BUILD.gn 
+./speedbox/jsi/v8.source-build.sh 
+ls
+cd ../node/
+ls
+./speedbox/jsi/node.source-build.sh 
+ls
+ls node/out/node
+ls node/out/Release/node 
+file node/out/Release/node 
+exit
+cd git/jsi/v8
+ls
+./speedbox/jsi/v8.source-config.sh 
+apt install libpci3:i386 libx11-xcb1:i386 linux-libc-dev:i386 apache2-bin binutils binutils-aarch64-linux-gnu binutils-arm-linux-gnueabihf binutils-mips64el-linux-gnuabi64 binutils-mipsel-linux-gnu bison bzip2 cdbs curl dbus-x11 devscripts dpkg-dev elfutils fakeroot flex git-core gperf libapache2-mod-php7.2 libappindicator3-1 libappindicator3-dev libasound2 libasound2-dev libatk1.0-0 libatspi2.0-0 libatspi2.0-dev libbluetooth-dev libbrlapi-dev libbrlapi0.6 libbz2-1.0 libbz2-dev libc6 libc6-dev libcairo2 libcairo2-dev libcap-dev libcap2 libcups2 libcups2-dev libcurl4-gnutls-dev libdrm-dev libdrm2 libelf-dev libevdev-dev libevdev2 libexpat1 libffi-dev libffi6 libfontconfig1 libfreetype6 libgbm-dev libgbm1 libglib2.0-0 libglib2.0-dev libglu1-mesa-dev libgnome-keyring-dev libgnome-keyring0 libgtk-3-0 libgtk-3-dev libinput-dev libinput10 libjpeg-dev libkrb5-dev libnspr4 libnspr4-dev libnss3 libnss3-dev libpam0g libpam0g-dev libpango1.0-0 libpci-dev libpci3 libpcre3 libpixman-1-0 libpng16-16 libpulse-dev libpulse0 libsctp-dev libspeechd-dev libspeechd2 libsqlite3-0 libsqlite3-dev libssl-dev libstdc++6 libudev-dev libudev1 libuuid1 libvulkan-dev libvulkan1 libwayland-egl1-mesa libwww-perl libx11-6 libx11-xcb1 libxau6 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxdmcp6 libxext6 libxfixes3 libxi6 libxinerama1 libxkbcommon-dev libxrandr2 libxrender1 libxslt1-dev libxss-dev libxt-dev libxtst-dev libxtst6 locales openbox p7zip patch perl php7.2-cgi pkg-config python python-cherrypy3 python-crypto python-dev python-numpy python-opencv python-openssl python-psutil python-yaml rpm ruby subversion uuid-dev wdiff x11-utils xcompmgr xz-utils zip zlib1g
+./speedbox/jsi/v8.source-config.sh 
+vim v8/build/config/c++/c++.gni 
+vim args.list 
+vim v8/build/config/c++/c++.gni 
+vim args.list 
+vim v8/build/config/c++/c++.gni 
+./speedbox/jsi/v8.source-config.sh 
+vim build/config/c++/c++.gni 
+vim v8/build/config/c++/c++.gni 
+./speedbox/jsi/v8.source-config.sh 
+ls
+./speedbox/jsi/v8.source-build.sh 
+./speedbox/jsi/v8.source-config.sh 
+./speedbox/jsi/v8.source-build.sh 
+grep libc++_shared v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/v8.source-build.sh 
+rm -r v8/out.gn/android.arm.release/libv8.81.so
+./speedbox/jsi/v8.source-build.sh 
+rm -r v8/out.gn/android.arm.release/lib*
+./speedbox/jsi/v8.source-build.sh 
+grep stl v8/build/* -r
+./speedbox/jsi/v8.source-build.sh 
+vim v8/build/toolchain/gcc_solink_wrapper.py
+vim args.list 
+./speedbox/jsi/v8.source-config.sh 
+./speedbox/jsi/v8.source-build.sh 
+ls
+rm -r v8/out.gn/v8-native/
+./speedbox/jsi/v8.native-publish.sh
+ls
+./speedbox/jsi/v8.native-upload.sh 
+./speedbox/jsi/v8.native-upload.sh -h
+./speedbox/jsi/v8.native-upload.sh -p v8/out.gn/v8-native/repo/com/qcode/jsi/v8-native/4.81.0/v8-native-4.81.0.pom -u admin -w admin123
+exit
+cd git/jsi/v8
+./speedbox/jsi/v8.source-config.sh 
+apt install libpci3:i386 libx11-xcb1:i386 linux-libc-dev:i386 apache2-bin binutils binutils-aarch64-linux-gnu binutils-arm-linux-gnueabihf binutils-mips64el-linux-gnuabi64 binutils-mipsel-linux-gnu bison bzip2 cdbs curl dbus-x11 devscripts dpkg-dev elfutils fakeroot flex git-core gperf libapache2-mod-php7.2 libappindicator3-1 libappindicator3-dev libasound2 libasound2-dev libatk1.0-0 libatspi2.0-0 libatspi2.0-dev libbluetooth-dev libbrlapi-dev libbrlapi0.6 libbz2-1.0 libbz2-dev libc6 libc6-dev libcairo2 libcairo2-dev libcap-dev libcap2 libcups2 libcups2-dev libcurl4-gnutls-dev libdrm-dev libdrm2 libelf-dev libevdev-dev libevdev2 libexpat1 libffi-dev libffi6 libfontconfig1 libfreetype6 libgbm-dev libgbm1 libglib2.0-0 libglib2.0-dev libglu1-mesa-dev libgnome-keyring-dev libgnome-keyring0 libgtk-3-0 libgtk-3-dev libinput-dev libinput10 libjpeg-dev libkrb5-dev libnspr4 libnspr4-dev libnss3 libnss3-dev libpam0g libpam0g-dev libpango1.0-0 libpci-dev libpci3 libpcre3 libpixman-1-0 libpng16-16 libpulse-dev libpulse0 libsctp-dev libspeechd-dev libspeechd2 libsqlite3-0 libsqlite3-dev libssl-dev libstdc++6 libudev-dev libudev1 libuuid1 libvulkan-dev libvulkan1 libwayland-egl1-mesa libwww-perl libx11-6 libx11-xcb1 libxau6 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxdmcp6 libxext6 libxfixes3 libxi6 libxinerama1 libxkbcommon-dev libxrandr2 libxrender1 libxslt1-dev libxss-dev libxt-dev libxtst-dev libxtst6 locales openbox p7zip patch perl php7.2-cgi pkg-config python python-cherrypy3 python-crypto python-dev python-numpy python-opencv python-openssl python-psutil python-yaml rpm ruby subversion uuid-dev wdiff x11-utils xcompmgr xz-utils zip zlib1g
+./speedbox/jsi/v8.source-config.sh 
+./speedbox/jsi/v8.source-build.sh 
+ls
+./speedbox/jsi/v8.native-publish.sh
+./speedbox/jsi/v8.native-upload.sh 
+./speedbox/jsi/v8.native-upload.sh -p v8/out.gn/v8-native/repo/com/qcode/jsi/v8-native/4.81.0/v8-native-4.81.0.pom -u admin -w admin123
+./speedbox/jsi/v8.native-publish.sh
+./speedbox/jsi/v8.native-upload.sh -p v8/out.gn/v8-native/repo/com/qcode/jsi/v8-native/4.81.0/v8-native-4.81.0.pom -u admin -w admin123
+exit
+ls
+cd git/elastos/Elastos.NET.Carrier/
+ls
+Elastos.NET.Carrier.Native.SDK/
+ls
+cd Elastos.NET.Carrier.Native.SDK/
+ls
+./speedbox/carrier/native.sdk-build.sh 
+ls
+vim ./speedbox/carrier/native.sdk-build.sh 
+ls build/Linux/
+./speedbox/carrier/native.sdk-build.sh 
+valgrind
+sudo apt install valgrind
+ls
+exit
+apt install valgrind
+exit
+sudo apt install valgrind
+ls
+cd git/elastos/Elastos.NET.Carrier/
+ls
+cd Elastos.NET.Carrier.Native.SDK/
+ls
+cd build/Linux/output/bin/
+ls
+./elashell 
+valgrind ./elashell 
+valgrind ./elashell --leak-check=full
+valgrind --leak-check=full -h
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+valgrind --leak-check=full --log-file=log.txt ./build/Linux/output/bin/elashell 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd =
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cp ../etc/carrier/carrier.conf ./
+ls
+vim carrier.conf 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+ls
+mv carrier.conf carrier.conf.express
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+ls
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+ls
+./speedbox/carrier/native.sdk-build.sh 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+exit
+cd git/elastos/Elastos.NET.Carrier/
+ls
+cd Elastos.NET.Carrier.Native.SDK   
+ls
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+ls
+./build/Linux/output/bin/
+ls
+cd ./build/Linux/output/bin/
+ls
+./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+ls
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+ls
+vim ~/.carrier/carrier.log 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+bash
+bashexit
+exit
+cd git/elastos/Elastos.NET.Carrier/Elastos.DID.Native.SDK/
+./speedbox/carrier/native.sdk-build.sh 
+ls
+cd ../Elastos.NET.Carrier.Native.SDK/
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+ls
+cd ./build/Linux/output/bin/
+ls
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+ls
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+vim ~/.carrier/carrier.log 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+git status
+ls
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+rm log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --log-file=log.txt ./elashell 
+vim log.txt 
+cat log.txt 
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log.txt ./elashell 
+vim log.txt 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log.txt ./elashell 
+vim log.txt 
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log1.txt ./elashell 
+vim log1.txt 
+ls
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log2.txt ./elatests 
+vim log.txt
+exit
+./speedbox/carrier/native.sdk-build.sh 
+cd git/elastos/Elastos.NET.Carrier/Elastos.DID.Native.SDK/
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+./speedbox/carrier/native.sdk-build.sh 
+ls
+cd build/Linux/output/bin/
+ls
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log3.txt ./elatests 
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log3.txt ./elateshell
+pwd
+ls
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log3.txt ./elateshell
+valgrind --leak-check=full --show-leak-kinds=all --log-file=log3.txt ./elashell
+exit
+ls
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+./speedbox/carrier/native.sdk-build.sh 
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+ls
+./speedbox/carrier/native.sdk-build.sh 
+ls
+rm -r build/Linux/
+rm -rfv build/Linux/
+./speedbox/carrier/native.sdk-build.sh 
+ls
+ls build/
+rm -r build/Linux/
+./speedbox/carrier/native.sdk-build.sh 
+exit
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+./speedbox/carrier/native.sdk-build.sh 
+exit
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+ls
+rm -rf build/Linux/
+ls
+./speedbox/carrier/native.sdk-build.sh 
+ls
+./speedbox/carrier/native.sdk-build.sh 
+rm -rf build/Linux/deps/libressl/
+./speedbox/carrier/native.sdk-build.sh 
+ls
+ls build/Linux/dest/lib/
+rm -rf build/Linux/deps/libressl/
+./speedbox/carrier/native.sdk-build.sh 
+apt install vim
+sudo apt install vim
+./speedbox/carrier/native.sdk-build.sh 
+mkdir /opt/workspace/git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/build/Linux/intermediates
+./speedbox/carrier/native.sdk-build.sh 
+mkdir /opt/workspace/git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/build/Linux/intermediates
+mkdir -p /opt/workspace/git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/build/Linux/intermediates
+./speedbox/carrier/native.sdk-build.sh 
+exit
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+ls
+./speedbox/carrier/native.sdk-build.sh 
+vim deps/platform-specific/CMakeFiles/flatcc-parser.dir/build.make
+vim /opt/workspace/git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/build/Linux/deps/platform-specific/external/src/flatcc-parser/CMakeFiles/CMakeOutput.log
+gcc
+gcc -v
+clang
+vim /opt/workspace/git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/build/Linux/deps/platform-specific/external/src/flatcc-parser/CMakeFiles/CMakeOutput.log
+./speedbox/carrier/native.sdk-build.sh 
+vim /opt/workspace/git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/build/Linux/deps/platform-specific/external/src/flatcc-parser/CMakeLists.txt 
+./speedbox/carrier/native.sdk-build.sh 
+vim 
+vim /opt/workspace/git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/build/Linux/deps/flatcc/external/src/flatcc
+./speedbox/carrier/native.sdk-build.sh 
+exit
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+ls
+./speedbox/carrier/native.sdk-build.sh 
+ls
+rm -r build/Linux/
+./speedbox/carrier/native.sdk-build.sh 
+ls
+cd docs/
+ls
+cd ../
+ls
+ls build/Linux/
+cd build/Linux/output/bin/
+ls
+./elashell 
+sudo apt install libconfig-dev
+./elashell 
+ls
+cd -
+ls
+rm build/Linux/intermediates/lib/libconfig.*
+./speedbox/carrier/native.sdk-build.sh 
+sudo apt install  libncurses5-dev
+cd -
+./elashell 
+./elatests 
+./elashell 
+cd -
+./speedbox/carrier/native.sdk-build.sh 
+cd -
+./elashell 
+exit
+cd git/jsi/v8/
+./speedbox/carrier/native.sdk-build.sh 
+./speedbox/jsi/v8.native-publish.sh
+./speedbox/jsi/v8.source-build.sh 
+exit
+valgrind
+ls
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+ls
+./speedbox/carrier/native.sdk-build.sh 
+sudo apt install libconfig-dev
+./speedbox/carrier/native.sdk-build.sh 
+ls
+rm -r build/Linux/
+./speedbox/carrier/native.sdk-build.sh 
+exit
+ls
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+cat ./v8/build/install-build-deps-android.sh 
+./speedbox/carrier/native.sdk-build.android.sh 
+export ANDROID_NDK_HOME=/root/android/android-ndk-r16b
+ls /root/android/android-ndk-r16b
+ls ~/android/android-ndk-r16b/
+export ANDROID_NDK_HOME=$HOME/android/android-ndk-r16b
+./speedbox/carrier/native.sdk-build.android.sh 
+exit
+cd git/jsi/v8/
+ls
+vim args.list 
+exit
+cd git/elastos/Elastos.NET.Carrier/Elastos.NET.Carrier.Native.SDK/
+./speedbox/carrier/native.sdk-build.sh 
+exit

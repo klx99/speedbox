@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceRoot}/build/Darwin/output/bin/elashell",
             // "args": ["--config=${workspaceRoot}/build/Darwin/output/bin/carrier.conf"],
-            "args": ["--config=${workspaceRoot}/build/Darwin/output/bin/carrier2.conf"],
+            // "args": ["--config=${workspaceRoot}/build/Darwin/bin/carrier1.conf"],
             // "program": "${workspaceRoot}/build/Darwin/output/bin/elatests",
             // "args": ["--cases --config=./tests.conf"],
             // "stopAtEntry": true,

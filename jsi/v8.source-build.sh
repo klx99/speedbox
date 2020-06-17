@@ -14,6 +14,6 @@ echo "change dir to $PROJECT_DIR";
 cd $PROJECT_DIR;
 
 echo "building";
-ninja -C v8/out.gn/android.arm.release android;
+ninja -C v8/out.gn/android.arm.release d8;
 
 

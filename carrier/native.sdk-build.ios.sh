@@ -41,8 +41,8 @@ for idx in "${!ARCH_LIST[@]}"; do
     echo "copy $install_dir/include/*";
     echo " ==> $dest_dir/include";
     cp -r $install_dir/include/* "$dest_dir/include";
-    echo "copy $install_dir/lib/*.so";
+    echo "copy $install_dir/lib/*.a";
     echo " ==> $dest_dir/lib/${ARCH_LIST[$idx]}";
-    cp $install_dir/lib/*.so "$dest_dir/lib/${ARCH_LIST[$idx]}";
+    cp $install_dir/lib/*.a "$dest_dir/lib/${ARCH_LIST[$idx]}";
 done
 
