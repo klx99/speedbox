@@ -23,7 +23,8 @@ function DockerRun() {
     cmdline+=" -w /opt/workspace";
     cmdline+=" -P";
     #cmdline+=" -e TZ=Asia/Shanghai";
-    #cmdline+=" -p 1081:1081";
+    cmdline+=" -p 10080:10080";
+    cmdline+=" --privileged";
     cmdline+=" --rm -it $img";
 
     echo $cmdline;

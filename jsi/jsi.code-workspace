@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../jsi/jsi-devtools"
+		},
+		{
+			"path": "../../jsi/node/node"
+		},
+		{
+			"path": "../../jsi/v8/v8"
+		}
+	],
+	"settings": {}
+}

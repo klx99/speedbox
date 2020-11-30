@@ -33,7 +33,8 @@ ANDROID_API=19;
 ANDROID_OPTS=;
 ANDROID_OPTS+=" --without-node-snapshot";
 ANDROID_OPTS+=" --without-npm";
-ANDROID_OPTS+=" --without-intl";
+#ANDROID_OPTS+=" --without-intl";
+ANDROID_OPTS+=" --with-intl=full-icu";
 ANDROID_OPTS+=" --fully-static";
 ANDROID_OPTS+=" --without-bundled-v8";
 #ANDROID_OPTS+=" --without-v8-platform";
@@ -51,27 +52,79 @@ cd node;
 echo "installing deps";
 apt install -y python3-distutils
 
+function PatchFile()
+{
+	local file="$1";
+	local reset="$2";
+	local from="$3";
+	local to="$4";
+	local ext="${5:-}";
 
-PATCHED_FILE="android-configure";
-echo "patching $PATCHED_FILE";
-git checkout HEAD -- $PATCHED_FILE;
-PATCHED_CONTENT="$(cat $PATCHED_FILE)";
-PATCHED_CONTENT=${PATCHED_CONTENT//armv7-linux-androideabi/armv7a-linux-androideabi};
-#PATCHED_CONTENT=${PATCHED_CONTENT//CXX=*clang++$'\n'/CXX=\"\$TOOLCHAIN/bin/\$SUFFIX-clang++ $CFLAGS\"$'\n'};
-PATCHED_CONTENT=${PATCHED_CONTENT//--without-snapshot/$ANDROID_OPTS};
-echo "$PATCHED_CONTENT" > $PATCHED_FILE;
+	echo "patching $file:";
+    echo "  from: $from"
+    echo "  to:   $to";
+    echo "  ext:  $ext";
+    if [[ ! -f "$file" ]]; then
+        echo "File not found: $PWD/$file."
+        exit 1;
+    fi
+    if [[ "$reset" == true ]]; then
+        git checkout HEAD -- "$file";
+    fi
 
-PATCHED_FILE="common.gypi";
-echo "patching $PATCHED_FILE";
+	local content="$(cat $file)";
+    if [[ -z "$ext" ]]; then
+	    content=${content//"$from"/$to};
+    else
+        content=${content//"$from"/$to$'\n'$ext};
+    fi
+	echo "$content" > "$file";
+}
+
+PatchFile "android-configure" true  "armv7-linux-androideabi" "armv7a-linux-androideabi";
+PatchFile "android-configure" false "--without-snapshot" "$ANDROID_OPTS";
+
 PATCHED_FROM="'libraries': [ '-llog' ]";
 PATCHED_CFLAGS="'cflags': [ '-I$V8_INCLUDE_PATH', '-D_LIBCPP_HAS_NO_OFF_T_FUNCTIONS' ]";
-PATCHED_LDFLAGS="'ldflags': [ '-l$V8_LIBRARY_PATH', '-l$ANDROID_LIBLOG' ]";
+PATCHED_LDFLAGS="'ldflags': [ '-l$V8_LIBRARY_PATH', '-l$ANDROID_LIBLOG', '-Wl,--allow-multiple-definition' ]";
+PatchFile "common.gypi" true  "$PATCHED_FROM" "$PATCHED_CFLAGS," "$PATCHED_LDFLAGS";
 
-git checkout HEAD -- $PATCHED_FILE;
-PATCHED_CONTENT="$(cat $PATCHED_FILE)";
-PATCHED_CONTENT=${PATCHED_CONTENT//"$PATCHED_FROM"/$PATCHED_CFLAGS,$'\n'$PATCHED_LDFLAGS};
-echo "$PATCHED_CONTENT" > $PATCHED_FILE;
+PatchFile "node.gyp" true  "'<(obj_dir)/tools/v8_gypfiles/<(STATIC_LIB_PREFIX)v8_base_without_compiler<(STATIC_LIB_SUFFIX)'," "";
+
+PatchFile "deps/cares/cares.gyp" true  "'_LARGEFILE_SOURCE'," "";
+PatchFile "deps/cares/cares.gyp" false "'_FILE_OFFSET_BITS=64'," "'_FILE_OFFSET_BITS=32',";
+
+PatchFile "deps/uv/CMakeLists.txt" true  "_FILE_OFFSET_BITS=64 _LARGEFILE_SOURCE" "_FILE_OFFSET_BITS=32";
+
+PatchFile "deps/uv/uv.gyp" true  "'_LARGEFILE_SOURCE'," "";
+PatchFile "deps/uv/uv.gyp" false "'_FILE_OFFSET_BITS=64'," "'_FILE_OFFSET_BITS=32',";
+
+PatchFile "src/debug_utils.cc" true  "__linux__" "__linux__jsidt_removed__";
+PatchFile "src/debug_utils.cc" false "HAVE_EXECINFO_H 1" "HAVE_EXECINFO_H 0";
+
+PatchFile "deps/cares/config/sunos/ares_config.h" true  "#define _FILE_OFFSET_BITS 64" "// #define _FILE_OFFSET_BITS 64";
+
+#fix runtime crash issue.
+PatchFile 'src/node_metadata.cc' true  'brotli =' 'brotli = "1.0.7";';
+PatchFile 'src/node_metadata.cc' false  'std::to_string' '// std::to_string';
+PatchFile 'src/node_metadata.cc' false '"." +' '// "." +';
+
+# redirect error log.
+PatchFile 'src/node.cc' true  'namespace node {' '#include<android/log.h>' 'namespace node {';
+PatchFile 'src/node.cc' false 'fprintf(stderr,' '__android_log_print(ANDROID_LOG_WARN, "DevTools",';
+
+PatchFile 'src/inspector_agent.cc' true  'namespace node {' '#include<android/log.h>' 'namespace node {';
+PatchFile 'src/inspector_agent.cc' false 'fprintf(stderr,' '__android_log_print(ANDROID_LOG_WARN, "DevTools",';
+
+PatchFile 'src/inspector_io.cc' true  'namespace node {' '#include<android/log.h>' 'namespace node {';
+PatchFile 'src/inspector_io.cc' false 'fprintf(stderr,' '__android_log_print(ANDROID_LOG_WARN, "DevTools",';
+
+PatchFile 'src/inspector_socket_server.cc' true  'namespace node {' '#include<android/log.h>' 'namespace node {';
+PatchFile 'src/inspector_socket_server.cc' false 'fprintf(out,' '__android_log_print(ANDROID_LOG_WARN, "DevTools",';
+PatchFile 'src/inspector_socket_server.cc' false 'fprintf(out_,' '__android_log_print(ANDROID_LOG_WARN, "DevTools",';
+
 
 echo "configing";
-./android-configure $ANDROID_NDK_HOME arm 23;
-
+rm -f config.gypi;
+./android-configure $ANDROID_NDK_HOME arm 19;
+PatchFile "config.gypi" false "'variables': {" "'variables': {'v8_enable_inspector': 1,";

@@ -25,7 +25,7 @@ ANDROID_NDK_HOME=$(eval cd "$ANDROID_NDK_HOME" && pwd);
 
 
 ARCH_LIST=(armeabi-v7a arm64-v8a x86 x86_64)
-HOST_LIST=(arm-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android)
+#HOST_LIST=(arm-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android)
 for idx in "${!ARCH_LIST[@]}"; do
     build_dir="$PROJECT_DIR/build/android";
     build_arch_dir="$build_dir/${ARCH_LIST[$idx]}";
@@ -35,11 +35,12 @@ for idx in "${!ARCH_LIST[@]}"; do
 
     cmake \
         -DANDROID_ABI=${ARCH_LIST[$idx]} \
-        -DCMAKE_ANDROID_ARCH_HEADER_TRIPLE=${HOST_LIST[$idx]} \
         -DANDROID_NDK_HOME=$ANDROID_NDK_HOME \
         -DCMAKE_TOOLCHAIN_FILE=$PROJECT_DIR/cmake/AndroidToolchain.cmake \
         -DCMAKE_INSTALL_PREFIX=$install_dir \
         $PROJECT_DIR;
+
+        #-DCMAKE_ANDROID_ARCH_HEADER_TRIPLE=${HOST_LIST[$idx]} \
 
     #make -j$MAX_JOBS VERBOSE=1 && make install;
     make -j$MAX_JOBS && make install;
